@@ -1,0 +1,41 @@
+.player-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.player-item {
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-item.active {
+  background-color: rgba(76, 175, 80, 0.2);
+  font-weight: bold;
+}
+
+.player-item.blocked {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.blocked-badge {
+  background-color: #dc3545;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+.no-players {
+  text-align: center;
+  padding: 10px;
+  color: #aaa;
+  font-style: italic;
+}
